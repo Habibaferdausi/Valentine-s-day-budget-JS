@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentines Day Budget</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h1 class="text-center mt-2 fw-bold text-danger">
+        Valentine Budget : <span> 00</span>
+      </h1>
+    </div>
+
+    <div class="shop-container row mt-5 mx-5">
+      <div class="col-6">
+        <div class="card mb-3 mt-5" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="images/20230209135911_original__media_469.jpg"
+                class="img-fluid ms-2"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ms-3">
+                <h5 class="card-title mt-3">KitKat Chocolate</h5>
+
+                <h5>Price: <span id="kitkat-price"> 200</span></h5>
+                <div class="d-flex">
+                  <input
+                    id="kitkat-quantity"
+                    type="text"
+                    placeholder="type here Quantity"
+                    class=""
+                  />
+                  <br />
+                  <button
+                    onclick="handleKitkat()"
+                    id="kitkat-buy-btn"
+                    class="ms-2 btn-success"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 mt-5" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="images/viber_image_2020-02-11_21-21-45-500x500.jpg"
+                class="img-fluid ms-2"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ms-3">
+                <h5 class="card-title mt-3">Rose Bouquet</h5>
+                <h5>Price: <span id="rose-price"> 400</span></h5>
+                <input
+                  id="rose-quantity"
+                  type="text"
+                  placeholder="type here Quantity"
+                />
+                <button id="rose-buy-btn" class="btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 mt-5" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/diary.jpg" class="img-fluid ms-2" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ms-3">
+                <h5 class="card-title mt-3">Diary</h5>
+                <h5>Price: <span id="diary-price"> 100</span></h5>
+                <input
+                  id="diary-quantity"
+                  type="text"
+                  placeholder="type here Quantity"
+                />
+                <button id="diary-buy-btn" class="btn-success">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="money-tracker col-6 text-center">
+        <h4>Chocolate: <span id="chocolate"> 00</span></h4>
+        <hr />
+        <h4>Rose: <span id="rose"> 00</span></h4>
+        <hr />
+        <h4>Diary: <span id="diary"> 00</span></h4>
+        <hr />
+        <h3>Total: <span id="total"> 00</span></h3>
+
+        <div class="promo-code mt-3 text-center p-3">
+          <h5 class="bg-info mt-2">Use Promo Code for 10% Discount</h5>
+          <input
+            id="promo-code"
+            class="p-2 mt-2"
+            type="text"
+            placeholder="101"
+          />
+          <button
+            onclick="handlePromoCode()"
+            class="btn btn-primary"
+            type="button"
+          >
+            Apply
+          </button>
+        </div>
+        <h2 class="mt-5">ALL COST :<span id="all-total"> 00</span></h2>
+      </div>
+    </div>
+
+    <!-- add javascript  -->
+    <script src="./app.js"></script>
+  </body>
+</html>
